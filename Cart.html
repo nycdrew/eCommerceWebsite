@@ -14,20 +14,17 @@
       border-radius: 0;
     }
     
-    /* Remove the jumbotron's default bottom margin */ 
      .jumbotron {
       margin-bottom: 0;
     }
    
-    /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
     }
   </style>
   <script>
-    //create array that will hold all ordered products
-    var shoppingCart = [];
+    var shoppingCart = []; // creates an array
 
     //this function manipulates DOM and displays content of our shopping cart
     function displayShoppingCart(){
@@ -60,15 +57,11 @@
 
 
     function AddtoCart(name,description,price){
-       //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
        var singleProduct = {};
-       //Fill the product object with data
        singleProduct.Name=name;
        singleProduct.Description=description;
        singleProduct.Price=price;
-       //Add newly created product to our shopping cart 
        shoppingCart.push(singleProduct);
-       //call display function to show on screen
        displayShoppingCart();
 
     }  
@@ -109,8 +102,8 @@
                                                    <li class="dropdown dropdown-small">
                                 <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">French</a></li>
+                                    <li><a href=""hreflang="en">English</a></li>
+                                    <li><a href=""hreflang="fr">French</a></li>
                                     <li><a href="#">German</a></li>
                                 </ul>
                             </li>
@@ -134,15 +127,15 @@
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <div class="panel-body"><img src="http://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy the NEW Iphone x space grey w/168gb for $1,500.00</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading">BLACK FRIDAY DEAL</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+        <div class="panel-body"><img src="http://www.rrbresult.co.in/wp-content/uploads/2016/07/MacBook-Pro-2017-1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy the New Macbook pro, space grey w/ 28GB for $1,000.00 </div>
       </div>
     </div>
   </div>
