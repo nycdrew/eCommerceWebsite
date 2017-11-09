@@ -27,25 +27,18 @@
     }
   </style>
   <script>
-      function show(shown, hidden) {
-        document.getElementById(shown).style.display='block';
-        document.getElementById(hidden).style.display='none';
-        return false;
-        }
-      function AddtoCart() {
-  console.log('hi');
-  var x = document.getElementById('Items');
-  var new_row = x.rows[1].cloneNode(true);
-  var len = x.rows.length;
-  new_row.cells[0].innerHTML = len;
-  var inp1 = new_row.cells[1].getElementsByTagName('input')[0];
-  inp1.id += len;
-  inp1.value = '';
-  var inp2 = new_row.cells[2].getElementsByTagName('input')[0];
-  inp2.id += len;
-  inp2.value = '';
-  x.appendChild(new_row);
-}
+    // creates a Dialog Box
+            function getConfirmation(){
+               var retVal = confirm("Welcome do you wish to continue?");
+               if( retVal == true ){
+                  document.write ("User wants to continue!");
+                  return true;
+               }
+               else{
+                  document.write ("User does not want to continue!");
+                  return false;
+               }
+            }
       </script>
 </head>
 <body>
@@ -146,27 +139,27 @@
   <br>
   <div class="row">
     <div class="col-sm-3">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="http://thelogicescapesme.com/wp-content/uploads/2015/08/classified-stamp_zyBqeH_d1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>Current Project</p>
     </div>
     <div class="col-sm-3"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="http://thelogicescapesme.com/wp-content/uploads/2015/08/classified-stamp_zyBqeH_d1.jpg" class="img-responsive" style="width:100%" alt="Image">
       <p>Project 2</p>    
     </div>
     <div class="col-sm-3">
       <div class="well">
-       <p>Some text..</p>
+       <p>Upcoming Holiday Deals!!!</p>
       </div>
       <div class="well">
-       <p>Some text..</p>
+       <p>Black friday Deals!!</p>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="well">
-       <p>Some text..</p>
+       <p>Cyber Monday Deals!!!</p>
       </div>
       <div class="well">
-       <p>Some text..</p>
+       <p>Christmas Deals!!</p>
       </div>
     </div>  
   </div>
